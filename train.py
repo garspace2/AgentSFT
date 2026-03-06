@@ -45,7 +45,8 @@ polyroots = get_json_schema(find_polynomial_roots)
 bessel = get_json_schema(calculate_bessel_j)
 
 trainer = SFTTrainer(
-    model="Qwen3-0.6B",
+    #model="Qwen3-0.6B",
+    model="Qwen/Qwen2.5-32B-Instruct",
     train_dataset=dataset,
 )
 
